@@ -35,12 +35,12 @@ jobs:
 
       - name: Clean public_html
         run: |
-          ssh -p "${{ secrets.HOSTINGER_PORT }}" "${{ secrets.HOSTINGER_USER }}@${{ secrets.HOSTINGER_HOST }}" \
+          ssh -i ~/.ssh/id_ed25519 -p "${{ secrets.HOSTINGER_PORT }}" "${{ secrets.HOSTINGER_USER }}@${{ secrets.HOSTINGER_HOST }}" \
           "find ~/public_html -mindepth 1 -maxdepth 1 ! -name '.well-known' -exec rm -rf {} +"
 
       - name: Upload dist to public_html
         run: |
           rsync -avz --delete \
-            -e "ssh -p ${{ secrets.HOSTINGER_PORT }}" \
+            -e "ssh -i ~/.ssh/id_ed25519 -p ${{ secrets.HOSTINGER_PORT }}" \
             dist/ \
             "${{ secrets.HOSTINGER_USER }}@${{ secrets.HOSTINGER_HOST }}:~/public_html/"
