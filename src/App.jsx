@@ -8,7 +8,7 @@ export default function App() {
       nombre: "El Hombre de la Tierra",
       categoria: "Colección Costumbrista",
       autor: "Adrián Serafini",
-      anio: "2026",
+      anio: "2022",
       precio: "$ 3.200.000",
       descripcion:
         "Escultura artesanal de inspiración rural, ideal para fincas, bodegas y espacios con identidad local.",
@@ -23,6 +23,7 @@ export default function App() {
       ideal: ["Fincas", "Bodegas", "Hoteles rurales", "Casas de campo"],
       estilo: ["Rural", "Narrativo", "Artesanal"],
       extra: ["Obra por encargo", "Envíos a toda Argentina"],
+      objectPosition: "object-center",
     },
     {
       slug: "diosa-de-la-vendimia",
@@ -30,7 +31,7 @@ export default function App() {
       nombre: "Diosa de la Vendimia",
       categoria: "Colección Vendimial",
       autor: "Adrián Serafini",
-      anio: "2026",
+      anio: "2024",
       precio: "$ 4.600.000",
       descripcion:
         "Pieza de fuerte impronta simbólica y escénica, ideal para bodegas, espacios temáticos y proyectos vinculados al universo del vino.",
@@ -45,6 +46,7 @@ export default function App() {
       ideal: ["Bodegas", "Wine lodges", "Jardines temáticos", "Hoteles boutique"],
       estilo: ["Simbólica", "Orgánica", "Escénica"],
       extra: ["Obra por encargo", "Envíos a toda Argentina"],
+      objectPosition: "object-top",
     },
     {
       slug: "mujer-ancestral",
@@ -52,7 +54,7 @@ export default function App() {
       nombre: "Mujer Ancestral",
       categoria: "Colección Mítica",
       autor: "Adrián Serafini",
-      anio: "2026",
+      anio: "2023",
       precio: "$ 3.850.000",
       descripcion:
         "Escultura artesanal de inspiración mítica y femenina, pensada para espacios contemplativos y jardines con fuerte identidad visual.",
@@ -64,6 +66,7 @@ export default function App() {
       ideal: ["Jardines de autor", "Espacios contemplativos", "Paisajismo", "Coleccionistas"],
       estilo: ["Mítica", "Serena", "Contemplativa"],
       extra: ["Obra por encargo", "Envíos a toda Argentina"],
+      objectPosition: "object-top",
     },
     {
       slug: "centinela-de-roma",
@@ -71,7 +74,7 @@ export default function App() {
       nombre: "Centinela de Roma",
       categoria: "Colección Histórica",
       autor: "Adrián Serafini",
-      anio: "2026",
+      anio: "2022",
       precio: "$ 4.400.000",
       descripcion:
         "Escultura artesanal de inspiración histórica, creada para espacios que buscan fuerza visual, carácter épico y presencia monumental.",
@@ -83,6 +86,7 @@ export default function App() {
       ideal: ["Coleccionistas", "Restaurantes temáticos", "Hoteles históricos", "Espacios culturales"],
       estilo: ["Histórica", "Épica", "Monumental"],
       extra: ["Obra por encargo", "Envíos a toda Argentina"],
+      objectPosition: "object-top",
     },
     {
       slug: "el-guardian-de-los-laberintos",
@@ -90,7 +94,7 @@ export default function App() {
       nombre: "El Guardián de los Laberintos",
       categoria: "Obras de Autor / Homenaje",
       autor: "Adrián Serafini",
-      anio: "2026",
+      anio: "2022",
       precio: "$ 3.800.000",
       descripcion:
         "Figura inspirada en la esencia de Jorge Luis Borges, pensada para espacios culturales, bibliotecas, estudios y ambientes de contemplación intelectual.",
@@ -105,6 +109,7 @@ export default function App() {
       ideal: ["Bibliotecas", "Espacios culturales", "Estudios privados", "Coleccionistas"],
       estilo: ["Intelectual", "Sobria", "De autor"],
       extra: ["Obra por encargo", "Envíos a toda Argentina"],
+      objectPosition: "object-top",
     },
     {
       slug: "el-guardian-del-silencio",
@@ -112,7 +117,7 @@ export default function App() {
       nombre: "El Guardián del Silencio",
       categoria: "Colección Espiritual",
       autor: "Adrián Serafini",
-      anio: "2026",
+      anio: "2023",
       precio: "$ 3.900.000",
       descripcion:
         "Una obra que invita a la calma, la introspección y la desaceleración del tiempo. Ideal para jardines, patios y espacios de bienestar.",
@@ -127,6 +132,7 @@ export default function App() {
       ideal: ["Jardines", "Patios", "Espacios de meditación", "Hoteles boutique"],
       estilo: ["Espiritual", "Serena", "Contemplativa"],
       extra: ["Obra por encargo", "Envíos a toda Argentina"],
+      objectPosition: "object-center",
     },
     {
       slug: "ganesha-senor-de-los-caminos",
@@ -134,7 +140,7 @@ export default function App() {
       nombre: "Ganesha, Señor de los Caminos",
       categoria: "Colección Espiritual",
       autor: "Adrián Serafini",
-      anio: "2026",
+      anio: "2022",
       precio: "$ 4.600.000",
       descripcion:
         "Escultura artesanal de fuerte simbolismo espiritual, ideal para espacios donde se busca armonía, apertura y energía positiva.",
@@ -149,6 +155,7 @@ export default function App() {
       ideal: ["Espacios espirituales", "Jardines", "Centros de bienestar", "Coleccionistas"],
       estilo: ["Espiritual", "Universal", "Simbólica"],
       extra: ["Obra por encargo", "Envíos a toda Argentina"],
+      objectPosition: "object-center",
     },
   ];
 
@@ -195,6 +202,9 @@ export default function App() {
             <a href="#coleccion" className="text-sm text-stone-300 transition hover:text-white">
               Colección
             </a>
+            <a href="#autor" className="text-sm text-stone-300 transition hover:text-white">
+              Autor
+            </a>
             <a href="#encargos" className="text-sm text-stone-300 transition hover:text-white">
               Encargos
             </a>
@@ -226,7 +236,8 @@ export default function App() {
               Esculturas artesanales que convierten un espacio común en una presencia inolvidable.
             </h1>
             <p className="mt-6 max-w-3xl text-base leading-8 text-stone-300 md:text-lg">
-              Colección y encargos especiales desarrollados en San Rafael, Mendoza. Cada obra se modela a mano, sin moldes, con una identidad visual potente y una historia propia.
+              Colección y encargos especiales desarrollados en San Rafael, Mendoza. Cada obra se modela
+              a mano, sin moldes, con una identidad visual potente y una historia propia.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
@@ -271,7 +282,8 @@ export default function App() {
                 <p className="text-sm text-amber-200">Obra destacada</p>
                 <h2 className="mt-1 text-xl font-semibold">Diosa de la Vendimia</h2>
                 <p className="mt-2 text-sm leading-7 text-stone-300">
-                  Fertilidad, vino y celebración. Una pieza escénica ideal para bodegas y espacios de alto impacto visual.
+                  Fertilidad, vino y celebración. Una pieza escénica ideal para bodegas y espacios de
+                  alto impacto visual.
                 </p>
               </div>
             </article>
@@ -319,7 +331,8 @@ export default function App() {
             </h2>
           </div>
           <p className="max-w-xl text-sm leading-7 text-stone-400">
-            Cada ficha muestra imagen de catálogo, imagen en entorno y detalle de la obra para revelar volumen, contexto y textura.
+            Cada ficha muestra imagen de catálogo, imagen en entorno y detalle de la obra para revelar
+            volumen, contexto y textura.
           </p>
         </div>
 
@@ -334,7 +347,7 @@ export default function App() {
                   <img
                     src={obra.imagenPrincipal}
                     alt={obra.nombre}
-                    className={`h-[320px] w-full object-cover sm:h-[420px] lg:h-full lg:min-h-[420px] ${obra.slug === 'el-guardian-de-los-laberintos' ? 'object-top' : 'object-center'}`}
+                    className={`h-[320px] w-full object-cover sm:h-[420px] lg:h-full lg:min-h-[420px] ${obra.objectPosition}`}
                   />
                 </div>
 
@@ -414,7 +427,9 @@ export default function App() {
                       <div className="text-2xl font-semibold text-white">{obra.precio}</div>
                     </div>
                     <a
-                      href={`${whatsappBase}?text=${encodeURIComponent(`Hola, me interesa la escultura \"${obra.nombre}\". Quisiera consultar disponibilidad, tiempos de ejecución y envío.`)}`}
+                      href={`${whatsappBase}?text=${encodeURIComponent(
+                        `Hola, me interesa la escultura "${obra.nombre}". Quisiera consultar disponibilidad, tiempos de ejecución y envío.`
+                      )}`}
                       className="rounded-2xl bg-amber-500 px-5 py-3 text-sm font-semibold text-stone-950 transition hover:scale-[1.02]"
                     >
                       Consultar por WhatsApp
@@ -427,6 +442,57 @@ export default function App() {
         </div>
       </section>
 
+      <section id="autor" className="autor">
+        <div className="autor-container">
+          <div className="autor-img">
+            <img src="/obras/adrian-serafini/adrian-serafini.jpg" alt="Adrián Serafini - Escultor" />
+          </div>
+
+          <div className="autor-info">
+            <span className="badge-autor">ARTISTA</span>
+            <h2>Adrián Serafini</h2>
+            <p className="autor-sub">Escultor autodidacta · San Rafael, Mendoza, Argentina</p>
+
+            <p>
+              Adrián Serafini es un escultor autodidacta nacido en Capital Federal, Argentina, y
+              radicado en San Rafael, Mendoza, donde desarrolla su obra en su taller ubicado en Cuadro
+              Bombal. Desde muy temprana edad encontró en la escultura una forma de expresión natural,
+              convirtiéndola no solo en su oficio, sino en su manera de habitar el mundo.
+            </p>
+
+            <p>
+              Su trabajo se caracteriza por una búsqueda constante de la belleza como principio
+              absoluto. Cada obra surge como una necesidad de materializar una emoción, una intuición o
+              una forma interior que necesita hacerse presente en el plano físico.
+            </p>
+
+            <p>
+              Trabaja exclusivamente con cemento, explorando sus límites expresivos en piezas que van
+              desde esculturas pequeñas hasta obras de gran escala destinadas a parques acuáticos,
+              museos, bodegas, casas y colecciones privadas.
+            </p>
+
+            <p>
+              Rechaza el uso de moldes como método de producción, entendiendo que cada pieza debe ser
+              única e irrepetible, construida desde la libertad total del gesto y la intuición. Su obra
+              no busca imponer una emoción, sino abrirla: generar en el observador una proyección
+              emocional propia.
+            </p>
+
+            <p>
+              A lo largo de su trayectoria ha desarrollado esculturas instaladas en bodegas, casas y
+              colecciones privadas de San Rafael, consolidando un lenguaje visual propio, alejado de los
+              estereotipos y profundamente ligado a lo humano, lo simbólico y lo espiritual.
+            </p>
+
+            <blockquote>
+              “El artesano trabaja a través del intelecto hacia la obra… el artista lo hace desde el
+              espíritu. Eso le da a la obra ese carácter único y misterioso.”
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
       <section id="encargos" className="border-y border-white/10 bg-stone-900/40">
         <div className="mx-auto max-w-7xl px-4 py-14 md:px-10 lg:px-12">
           <div className="grid gap-8 rounded-[32px] border border-white/10 bg-white/5 p-5 md:grid-cols-[0.9fr_1.1fr] md:p-10">
@@ -436,7 +502,9 @@ export default function App() {
                 Del boceto a la presencia final.
               </h2>
               <p className="mt-4 leading-8 text-stone-300">
-                La mayoría de las esculturas se realizan por encargo. El cliente plantea una idea, una referencia o una intención estética, se desarrolla un boceto y luego comienza la ejecución manual completa de la obra.
+                La mayoría de las esculturas se realizan por encargo. El cliente plantea una idea, una
+                referencia o una intención estética, se desarrolla un boceto y luego comienza la
+                ejecución manual completa de la obra.
               </p>
             </div>
             <div className="grid gap-4 sm:grid-cols-2">
@@ -448,7 +516,10 @@ export default function App() {
                 "5. Cierre final y coordinación de entrega",
                 "6. Envío a cualquier punto de Argentina",
               ].map((paso) => (
-                <div key={paso} className="rounded-2xl border border-white/10 bg-stone-950/70 px-5 py-4 text-sm text-stone-200">
+                <div
+                  key={paso}
+                  className="rounded-2xl border border-white/10 bg-stone-950/70 px-5 py-4 text-sm text-stone-200"
+                >
                   {paso}
                 </div>
               ))}
@@ -464,11 +535,14 @@ export default function App() {
             Esculturas artesanales únicas para proyectos con identidad real.
           </h2>
           <p className="mx-auto mt-5 max-w-3xl text-base leading-8 text-stone-300">
-            CENITEK trabaja desde San Rafael, Mendoza, desarrollando piezas por encargo y enviando obras a toda la Argentina.
+            CENITEK trabaja desde San Rafael, Mendoza, desarrollando piezas por encargo y enviando obras
+            a toda la Argentina.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <a
-              href={`${whatsappBase}?text=${encodeURIComponent("Hola, quiero consultar por una escultura artesanal por encargo.")}`}
+              href={`${whatsappBase}?text=${encodeURIComponent(
+                "Hola, quiero consultar por una escultura artesanal por encargo."
+              )}`}
               className="rounded-2xl bg-amber-500 px-6 py-3 text-sm font-semibold text-stone-950"
             >
               Escribir por WhatsApp
